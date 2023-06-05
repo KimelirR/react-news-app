@@ -28,6 +28,26 @@ cd react-news-app
 > End
 
 
+Then, on the other way manually
+
+* Install project dependencies
+
+  ```javascript
+    npm install
+  ```
+
+* Install project dependencies
+
+  ```javascript
+    npm run dev
+  ```
+
+* On your Browser run .
+```javascript
+ http://localhost:5173
+```
+
+
 
 
 
