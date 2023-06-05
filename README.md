@@ -3,11 +3,11 @@
 
 * clone this project into your machine
   ```
-  git clone https://github.com/KimelirR/AfricasTalking-laravel-sms.git
+  git clone https://github.com/KimelirR/react-news-app.git
   ```
 * clone this project into your machine
 ```
-cd news-aggregator/frontend
+cd react-news-app
 ```
 
 * Install project dependencies
