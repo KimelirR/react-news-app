@@ -25,7 +25,7 @@ cd react-news-app
 ```javascript
  http://localhost:5173
 ```
-> Congratulations you have installed laravel app successfully!
+> End
 
 
 
