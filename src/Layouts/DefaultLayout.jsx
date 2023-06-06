@@ -50,6 +50,21 @@ export default function DefaultLayout() {
 <Navbar bg="primary" expand={false} fixed="top" className="mb-5">
         <Container fluid>
           <Navbar.Brand href="#">News Aggregator</Navbar.Brand>
+          
+          {notification && (
+                <ToastContainer
+                  position="top-center"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="colored"
+                ></ToastContainer>
+              )}
 
           <NavDropdown title="Profile" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">

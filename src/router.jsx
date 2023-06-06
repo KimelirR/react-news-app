@@ -5,6 +5,7 @@ import Login from './auth/Login';
 import GuestLayout from "./Layouts/GuestLayout.jsx";
 import DefaultLayout from "./Layouts/DefaultLayout.jsx";
 import NewsLayout from "./Layouts/NewsLayout.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
