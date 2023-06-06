@@ -47,7 +47,7 @@ const Cards = () => {
               data-appear="appear"
               data-animation="zoomIn"
             >
-            <img src={news.image_url} class="card-img-top" alt="news image"></img>
+            <img src={news.image_url} className="card-img-top" alt="news image"></img>
               <div className="card-header white bg-success">
                 <h4 className="card-title white">{news.title}</h4>
               </div>
@@ -58,10 +58,10 @@ const Cards = () => {
                   </p>
                   
                   <p className="card-text styled">
-                  <Link to={news.web_url} class="btn btn-outline-danger text-center col-lg-4 col-md-6 col-sm-12">Link</Link>
+                  <Link to={news.web_url} className="btn btn-outline-danger text-center col-lg-4 col-md-6 col-sm-12">Link</Link>
                   </p>
 
-                  <p class="card-text"><small className="text-body-secondary mb-2"><strong>Posted on {news.published_at}</strong></small></p>
+                  <p className="card-text"><small className="text-body-secondary mb-2"><strong>Posted on {news.published_at}</strong></small></p>
                 </div>
               </div>
             </div>
