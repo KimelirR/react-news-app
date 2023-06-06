@@ -6,8 +6,7 @@ import { useState } from "react";
 import logo from '../assets/images/logo/leave2-logo.png';
 
 
-const LoginTest = () => {
-
+const Login = () => {
   const emailRef = createRef()
   const passwordRef = createRef()
   const { setUser, setToken } = useStateContext()
@@ -162,4 +161,4 @@ const LoginTest = () => {
   );
 }
 
-export default LoginTest
+export default Login

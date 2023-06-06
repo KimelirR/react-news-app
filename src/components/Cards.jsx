@@ -6,9 +6,8 @@ import { Link } from "react-router-dom";
 import './Card.css';
 
 const Cards = () => {
-  const [news, setNews] = useState([]);
+  const {news,setNews} = useStateContext();
   const [loading, setLoading] = useState(false);
-  const { setNotification } = useStateContext();
 
   useEffect(() => {
     getNews();
@@ -58,7 +57,7 @@ const Cards = () => {
                   </p>
                   
                   <p className="card-text styled">
-                  <Link to={news.web_url} className="btn btn-outline-danger text-center col-lg-4 col-md-6 col-sm-12">Link</Link>
+                      <Link to={news.web_url} className="btn btn-outline-danger text-center col-4">Link</Link>
                   </p>
 
                   <p className="card-text"><small className="text-body-secondary mb-2"><strong>Posted on {news.published_at}</strong></small></p>
