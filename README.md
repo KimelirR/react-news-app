@@ -20,7 +20,7 @@
    docker build -t react-news-app .
 ```
 
-* Run the Docker Container: On port 5173 you will even check on your terminal
+* Run the Docker Container: Exposing port 5173 you will even check on your terminal
 
 ```bash
    docker run -p 5173:5173 my-react-app
