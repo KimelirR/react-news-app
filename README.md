@@ -28,7 +28,7 @@
 
 > OR
 
-* create the docker container using docker-compose. We are going to use .yml file 
+* create the docker container using docker-compose. We are going to use .yml file
 
 ```bash
   docker-compose up -d
