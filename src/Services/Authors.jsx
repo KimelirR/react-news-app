@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { useStateContext } from "../context/ContextProvider";
 import axiosClient from "../axios-client";
 import Form from 'react-bootstrap/Form';
@@ -27,14 +27,14 @@ const Authors = () => {
   return (
     <>
       {loading && (
-          <p>Loading...</p>
+        <p>Loading...</p>
       )}
       {!loading && (
         <Form.Select aria-label="Default select example" >
-        <option>--Check or Select--</option>
-        {authors.map((author) => (
-        <option key={author.id} >{author.name}</option>
-        ))}
+          <option>--Check or Select--</option>
+          {authors.map((author) => (
+            <option key={author.id} >{author.name}</option>
+          ))}
         </Form.Select>
       )}
     </>
