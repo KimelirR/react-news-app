@@ -1,6 +1,6 @@
 version: "3"
 services:
-  frontend-app:
+  react-news-app:
     build:
       context: .
       dockerfile: Dockerfile
