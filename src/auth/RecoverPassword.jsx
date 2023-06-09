@@ -1,11 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/leave2-logo.png';
+import background from '../assets/images/backgrounds/bg-18.jpg';
+
+
+const styles = {
+  container: {
+      backgroundImage: `url(${background})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh'
+  }
+};
 
 const RecoverPassword = () => {
   return (
-  <body className="vertical-layout vertical-menu 1-column  bg-full-screen-image blank-page blank-page" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="1-column">
-    <div className="app-content content">
+    <div className="app-content content" style={styles.container} >
       <div className="content-wrapper">
         <div className="content-wrapper-before" />
         <div className="content-header row">
@@ -52,8 +64,6 @@ const RecoverPassword = () => {
         </div>
       </div>
     </div>
-  </body>
-
   )
 }
 

@@ -1,5 +1,4 @@
 import axios from "axios";
-import {useStateContext} from "./context/ContextProvider.jsx";
 
 const axiosClient = axios.create({
   baseURL: 'http://127.0.0.1:8000/api/',

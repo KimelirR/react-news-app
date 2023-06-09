@@ -4,7 +4,19 @@ import {createRef} from "react";
 import {useStateContext} from "../context/ContextProvider.jsx";
 import { useState } from "react";
 import logo from '../assets/images/logo/leave2-logo.png';
+import background from '../assets/images/backgrounds/bg-18.jpg';
 
+
+const styles = {
+  container: {
+      backgroundImage: `url(${background})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh'
+  }
+};
 
 const Login = () => {
   const emailRef = createRef()
@@ -21,8 +33,6 @@ const Login = () => {
       password: passwordRef.current.value,
     }
 
-    console.log(payload);
-
     axiosClient.post('/login', payload)
       .then(({data}) => {
         setUser(data.user)
@@ -38,14 +48,7 @@ const Login = () => {
   }
 
   return (
-    <body
-      className="vertical-layout vertical-menu 1-column bg-gradient-x-purple-blue bg-full-screen-image blank-page blank-page pace-done menu-collapsed"
-      data-open="click"
-      data-color="bg-gradient-x-purple-blue"
-      data-menu="vertical-menu"
-      data-col="1-column"
-    >
-      <div className="app-content content">
+      <div className="app-content content" style={styles.container} >
         <div className="content-wrapper">
           <div className="content-wrapper-before" />
           <div className="content-header row"></div>
@@ -157,7 +160,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </body>
+
   );
 }
 

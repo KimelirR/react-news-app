@@ -2,10 +2,9 @@ import {Link, Navigate, Outlet} from "react-router-dom";
 import {useStateContext} from "../context/ContextProvider";
 import axiosClient from "../axios-client.js";
 import {useEffect} from "react";
-import avatar19 from '../assets/images/portrait/small/avatar-s-19.png';
+import avatar4 from '../assets/images/portrait/small/avatar-s-4.png';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Navbar,
@@ -69,7 +68,7 @@ export default function DefaultLayout() {
           <NavDropdown title="Profile" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">
                     <span className="avatar avatar-online">
-                    <img src={avatar19} alt="avatar" />
+                    <img src={avatar4} alt="avatar" />
                     <span className="user-name text-bold-700 ml-1">
                       {user.name} &nbsp; &nbsp;
                     </span>

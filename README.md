@@ -16,11 +16,11 @@ cd react-news-app
     npm install
   ```
 
-* Generate key for laravel new application you have installed.
-    ```php
-    docker-compose up -d
-    ```
-
+* Dockerize app.
+      ```php
+      docker-compose up -d
+      ```
+      
 * On your Browser run .
 ```javascript
  http://localhost:5173

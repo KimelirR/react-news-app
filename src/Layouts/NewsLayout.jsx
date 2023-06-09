@@ -1,10 +1,8 @@
-import React from "react";
-// import ResponsiveNavbar from "../components/ResponsiveNavbar";
-import Cards from "../components/Cards";
+import React, {createRef} from "react";
+import News from "../Services/News";
 import Footer from "../components/Footer";
-import { Button, Form, FormControl, NavDropdown } from "react-bootstrap";
-import Authors from "../components/Authors";
-import {createRef,useState, useEffect} from "react";
+import { Button, Form, FormControl} from "react-bootstrap";
+import Authors from "../Services/Authors";
 import { useStateContext } from "../context/ContextProvider";
 import axiosClient from "../axios-client";
 
@@ -17,10 +15,9 @@ const NewsLayout = () => {
     const payload = {
       search: searchRef.current.value,
     }
-    // console.log(payload);
+
     axiosClient.post('searchnews', payload)
       .then(({data}) => {
-        // console.log(data);
         setNews(data.data);
       })
       .catch((err) => {
@@ -35,7 +32,6 @@ const NewsLayout = () => {
     <>
       <div className="row mt-5">
      
-     
         <div className="col-6 mb-3">
           <h4>News Broadcasting</h4>
           <p>Customized Data</p>
@@ -44,11 +40,7 @@ const NewsLayout = () => {
       
         <div className="col-6 mb-3">
           <h4>Authors</h4>
-                <NavDropdown  id="offcanvasNavbarDropdown">         
-                  
                   <Authors />
-
-                </NavDropdown>
           <hr />
         </div>
 
@@ -68,7 +60,7 @@ const NewsLayout = () => {
         </div>
       </div>
 
-      <Cards />
+      <News />
 
       <Footer />
     </>

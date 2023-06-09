@@ -3,7 +3,19 @@ import axiosClient from "../axios-client.js";
 import {useStateContext} from "../context/ContextProvider.jsx";
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/leave2-logo.png';
+import background from '../assets/images/backgrounds/bg-18.jpg';
 
+
+const styles = {
+  container: {
+      backgroundImage: `url(${background})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh'
+  }
+};
 
 const Register = () => {
 
@@ -39,14 +51,8 @@ const Register = () => {
   }
 
   return (
-    <body
-      className="vertical-layout vertical-menu 1-column  bg-full-screen-image blank-page blank-page"
-      data-open="click"
-      data-menu="vertical-menu"
-      data-color="bg-gradient-x-purple-blue"
-      data-col="1-column"
-    >
-      <div className="app-content content">
+   
+      <div className="app-content content" style={styles.container} >
         <div className="content-wrapper">
           <div className="content-wrapper-before" />
           <div className="content-header row"></div>
@@ -113,7 +119,7 @@ const Register = () => {
                             <input
                               type="password"
                               className="form-control round"
-                              id="user-password"
+                              id="password_confirmation"
                               placeholder="Enter Confirm Password"
                               ref={passwordConfirmationRef}
                             />
@@ -170,7 +176,6 @@ const Register = () => {
           </div>
         </div>
       </div>
-    </body>
   );
 }
 
