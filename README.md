@@ -23,7 +23,7 @@
 * Run the Docker Container: Exposing port 5173 you will even check on your terminal
 
 ```bash
-   docker run -p 5173:5173 my-react-app
+   docker run -p 5173:5173 react-news-app
 ```
 
 > OR
