@@ -34,28 +34,6 @@
   docker-compose up -d
 ```
 
-> OR
-
-Then, on the other way manually
-
-* Install project dependencies
-
-```javascript
-    npm install
-```
-
-* Install project dependencies
-
-```javascript
-    npm run dev
-```
-
-* On your Browser run .
-
-```javascript
-    http://localhost:5173
-```
-
 * To kill or Stop Docker running, first of all check if status of our app 'react-news-app' is up
 
 ```bash
@@ -66,4 +44,26 @@ Then, on the other way manually
 
 ```bash
 docker stop id-of-image
+```
+
+> OR
+
+Then, on the other way manually
+
+* Install project dependencies
+
+```javascript
+    npm install
+```
+
+* Run Local Server
+
+```javascript
+    npm run dev
+```
+
+* On your Browser run .
+
+```javascript
+    http://localhost:5173
 ```
