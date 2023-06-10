@@ -36,9 +36,9 @@ Installation
 
 Clone Repository to your device:
 
-      ```bash
-      git clone https://github.com/KimelirR/react-news-app.git
-      ```
+```bash
+git clone https://github.com/KimelirR/react-news-app.git
+```
 
 Navigate to the project Directory:
 
