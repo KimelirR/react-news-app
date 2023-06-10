@@ -49,13 +49,13 @@ cd react-news-app
 Build the Docker Image: name is react-news-app:
 
 ```bash
-   docker build -t react-news-app .
+docker build -t react-news-app .
 ```
 
 Run the Docker Container: Exposing port 5173 you will even check on your terminal:
 
 ```bash
-   docker run -p 5173:5173 react-news-app
+docker run -p 5173:5173 react-news-app
 ```
 
 > OR
@@ -85,30 +85,30 @@ Then, on the other way manually
 Install project dependencies
 
 ```javascript
-   npm install
+npm install
 ```
 
 Run Local Server
 
 ```javascript
-   npm run dev
+npm run dev
 ```
 
 On your Browser navigate to .
 
 ```javascript
-   http://localhost:5173
+http://localhost:5173
 ```
 
 > Ran seeder on backed! Yes login with credentials below
 > Email
 
 ```bash
-   admin@gmail.com
+admin@gmail.com
 ```
 
 > Password
 
 ```bash
-   *noOneLike@%admin#
+*noOneLike@%admin#
 ```
