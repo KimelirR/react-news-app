@@ -17,11 +17,11 @@ News-aggregator front-endd requires the following to run:
 
 * [Node.js][node] 16+
 * [Vite][vite]
-* [React_Bootrsap][react_bootstrap]
+* [React Bootrsap][react_bootstrap]
 * [Docker][docker]
-* [React_Router][react_router_dom]
+* [React Router][react_router_dom]
 * [Axios][axios]
-* [React_Toastify][toastify]
+* [React Toastify][toastify]
 
 Skills
 ------------
