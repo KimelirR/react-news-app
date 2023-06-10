@@ -15,13 +15,13 @@ Requirements
 
 News-aggregator front-endd requires the following to run:
 
-    * [Node.js][node] 16+
-    * [Vite] <https://vitejs.dev/> 
-    * [React Bootrsap] <https://react-bootstrap.netlify.app/>
-    * [Docker] <https://www.docker.com/>
-    * [React Router] <https://reactrouter.com/>
-    * [Axios] <https://axios-http.com/docs/intro>
-    * [React Toastify] <https://fkhadra.github.io/react-toastify/introduction>
+* [Node.js] [node] 16+
+* [Vite] [vite]
+* [React_Bootrsap] [react_bootstrap]
+* [Docker] [docker]
+* [React_Router] [react_router_dom]
+* [Axios] [axios]
+* [React_Toastify] [toastify]
 
 Skills
 ------------
@@ -112,3 +112,13 @@ admin@gmail.com
 ```bash
 *noOneLike@%admin#
 ```
+
+[node]: https://nodejs.org
+[vite]: https://vitejs.dev
+[react_bootstrap]: https://react-bootstrap.netlify.app
+[docker]: https://www.docker.com
+[react_router_dom]: https://reactrouter.com
+[axios]: https://axios-http.com/docs/intro
+[toastify]: https://fkhadra.github.io/react-toastify/introduction
+
+
