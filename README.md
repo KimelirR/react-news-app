@@ -1,69 +1,114 @@
-# React Front end news-aggregator
+News-aggregator
+==========
 
-## Installation
+Front-end implementation for news aggregator.
 
-* clone this project into your machine
+Table of Contents
+-----------------
 
-```bash
-  git clone https://github.com/KimelirR/react-news-app.git
-```
+* [Requirements](#requirements)
+* [Skills](#skills)
+* [Installation](#installation)
 
-* clone this project into your machine
+Requirements
+------------
 
-```bash
-  cd react-news-app
-```
+News-aggregator front-endd requires the following to run:
 
-* Build the Docker Image: name is react-news-app
+    * [Node.js][node] 16+
+    * [Vite] <https://vitejs.dev/> 
+    * [React Bootrsap] <https://react-bootstrap.netlify.app/>
+    * [Docker] <https://www.docker.com/>
+    * [React Router] <https://reactrouter.com/>
+    * [Axios] <https://axios-http.com/docs/intro>
+    * [React Toastify] <https://fkhadra.github.io/react-toastify/introduction>
 
-```bash
-   docker build -t react-news-app .
-```
+Skills
+------------
 
-* Run the Docker Container: Exposing port 5173 you will even check on your terminal
+    * State management
+    * Authentication
+    * React Routing
+    * React Redux
 
-```bash
-   docker run -p 5173:5173 react-news-app
-```
+Installation
+------------
+
+Clone Repository to your device:
+
+      ```bash
+      git clone https://github.com/KimelirR/react-news-app.git
+      ```
+
+Navigate to the project Directory:
+
+      ```bash
+      cd react-news-app
+      ```
+
+Build the Docker Image: name is react-news-app:
+
+      ```bash
+         docker build -t react-news-app .
+      ```
+
+Run the Docker Container: Exposing port 5173 you will even check on your terminal:
+
+      ```bash
+         docker run -p 5173:5173 react-news-app
+      ```
 
 > OR
 
-* create the docker container using docker-compose. We are going to use .yml file
+Create the docker container using docker-compose. We are going to use .yml file:
 
-```bash
-  docker-compose up -d
-```
+      ```bash
+      docker-compose up -d
+      ```
 
-* To kill or Stop Docker running, first of all check if status of our app 'react-news-app' is up
+To kill or Stop Docker running, first of all check if status of our app 'react-news-app' is up:
 
-```bash
- docker ps
-```
+      ```bash
+      docker ps
+      ```
 
 > Then stop id
 
-```bash
-docker stop id-of-image
-```
+      ```bash
+      docker stop id-of-image
+      ```
 
 > OR
 
 Then, on the other way manually
 
-* Install project dependencies
+Install project dependencies
 
-```javascript
-    npm install
-```
+      ```javascript
+         npm install
+      ```
 
-* Run Local Server
+Run Local Server
 
-```javascript
-    npm run dev
-```
+      ```javascript
+         npm run dev
+      ```
 
-* On your Browser run .
+On your Browser navigate to .
 
-```javascript
-    http://localhost:5173
-```
+      ```javascript
+         http://localhost:5173
+      ```
+
+> Ran seeder on backed! Yes login with credentials below
+> Email
+
+      ```bash
+         admin@gmail.com
+      ```
+
+> Password
+
+      ```bash
+         *noOneLike@%admin#
+      ```
