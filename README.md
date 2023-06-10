@@ -26,10 +26,10 @@ News-aggregator front-endd requires the following to run:
 Skills
 ------------
 
-    * State management
-    * Authentication
-    * React Routing
-    * React Redux
+* State management
+* Authentication
+* React Routing
+* React Redux
 
 Installation
 ------------
