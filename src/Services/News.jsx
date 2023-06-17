@@ -35,7 +35,7 @@ const News = () => {
     <>
       {loading && (
         <div className="row mt-5">
-          <div className="col-12 mb-3">
+          <div className="col-12 mb-3 d-flex justify-content-center">
             <div class="spinner-border" role="status">
               <span class="visually-hidden">Loading...</span>
             </div>
