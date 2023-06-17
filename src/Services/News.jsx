@@ -36,7 +36,9 @@ const News = () => {
       {loading && (
         <div className="row mt-5">
           <div className="col-12 mb-3">
-            <p>Loading...</p>
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
             <hr />
           </div>
         </div>
