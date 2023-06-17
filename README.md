@@ -101,10 +101,10 @@ http://localhost:5173
 ```
 
 > Ran seeder on backed! Yes login with credentials below
-> Email
+> My Email
 
 ```bash
-admin@gmail.com
+kimeliryans@gmail.com
 ```
 
 > Password
