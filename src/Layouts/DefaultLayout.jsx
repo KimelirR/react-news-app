@@ -41,7 +41,7 @@ export default function DefaultLayout() {
 
   return (
     <div className="me-3 ms-3">
-      <Navbar bg="primary" expand={false} fixed="top" className="mb-5">
+      <Navbar bg="success" expand={false} fixed="top" className="mb-5">
         <Container fluid>
           <Navbar.Brand to="#">News Aggregator</Navbar.Brand>
 
